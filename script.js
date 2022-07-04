@@ -3,7 +3,6 @@ let cards = [];
 let gameActive = false;
 let totalGuesses = 0;
 let matches = 0;
-let highScore = parseInt(localStorage.getItem('highscore'));
 let lineHeight = null;
 
 //default values
@@ -52,7 +51,7 @@ const WORDS = [
 function shuffle(array) {
   if (typeOfCards === 'colors') {
       array = COLORS;
-  } else if (typeofCards = 'words') {
+  } else if (typeOfCards = 'words') {
       array = WORDS;
   }
 
